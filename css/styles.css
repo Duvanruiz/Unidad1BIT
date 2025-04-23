@@ -1,0 +1,106 @@
+/* Paleta de colores */
+:root {
+    --color-principal: #1f1f1f;
+    --color-secundario: #f5f5f5;
+    --color-acento: #c59d5f;
+    --color-texto: #333;
+    --color-claro: #ffffff;
+    --color-gris: #e0e0e0;
+    --fuente-principal: 'Roboto', sans-serif;
+  }
+  
+  /* Estilos globales */
+  body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--color-principal);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  header h1 {
+    font-weight: 700;
+  }
+  
+  .nav-link {
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--color-acento);
+  }
+  
+  /* Secciones principales */
+  main h2 {
+    font-weight: 600;
+    border-left: 5px solid var(--color-acento);
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  section {
+    margin-bottom: 60px;
+  }
+  
+  /* Tarjetas */
+  .card-custom {
+    background-color: var(--color-claro);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+  
+  .card-custom img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--color-principal);
+    font-size: 0.9rem;
+  }
+  
+  /* Utilidades */
+  .text-acento {
+    color: var(--color-acento);
+  }
+  .bg-acento {
+    background-color: var(--color-acento);
+    color: var(--color-claro);
+  }
+  
+  .btn-acento {
+    background-color: var(--color-acento);
+    color: var(--color-claro);
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-acento:hover {
+    background-color: #a87f45;
+  }
+  /* Zoom suave para imágenes */
+.img-zoom {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+    cursor: zoom-in;
+  }
+  
+  .img-zoom:hover {
+    transform: scale(1.03);
+    cursor: zoom-out;
+  }
+  
